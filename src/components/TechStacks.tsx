@@ -3,9 +3,12 @@ import React from "react";
 import { techStacks } from "@/constants/technologyStacks";
 const TechStacks = () => {
   return (
-    <section className="mt-10">
+    <section className="mt-10" id="techStacks">
       <div className="lg:flex lg:gap-x-20">
-        <h1 className="title">Technology Stacks</h1>
+        <h1 className="title flex gap-x-3">
+          Technology Stacks
+          <span className="circle mt-5"></span>
+        </h1>
 
         <div className="mt-8 lg:grow lg:mt-0">
           {techStacks.map((stacks, index) => (

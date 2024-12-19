@@ -12,10 +12,7 @@ const Landing = () => {
   return (
     <section className="flex flex-col flex-col-reverse items-center justify-center gap-x-5 lg:flex-row">
       <div className="w-full mt-10 lg:mt-0">
-        <h1 className="text-7xl flex items-center gap-x-3">
-          Hello
-          <span className="circle mt-10"></span>
-        </h1>
+        <h1 className="text-7xl">Hi, I&apos;m Nik!</h1>
         <p className="lg:text-lg">
           I am a <span className="font-bold">Frontend Developer</span> dedicated
           to creating exceptional web experiences who also loves{" "}
@@ -30,7 +27,9 @@ const Landing = () => {
           </span>
         </p>
 
-        <Button variant='default'>Download CV</Button>
+        <Button variant="default">
+          <a href="#" download={`Angeles_CV${new Date().getFullYear()}`}>Download CV</a>
+        </Button>
       </div>
 
       <div className="group">
