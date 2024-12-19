@@ -3,16 +3,15 @@
 import React from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import Me from "@/public/images/me.jpg";
+import Me from "/public/images/me.jpg";
 import { Button } from "./ui/button";
-
 const Typewriter = dynamic(() => import("typewriter-effect"), { ssr: false });
 
 const Landing = () => {
   return (
     <section className="flex flex-col flex-col-reverse items-center justify-center gap-x-5 lg:flex-row">
       <div className="w-full mt-10 lg:mt-0">
-        <h1 className="text-7xl">Hi, I&apos;m Nik!</h1>
+        <h1 className="text-5xl sm:text-7xl">Hi, I&apos;m Nik!</h1>
         <p className="lg:text-lg">
           I am a <span className="font-bold">Frontend Developer</span> dedicated
           to creating exceptional web experiences who also loves{" "}
@@ -28,7 +27,12 @@ const Landing = () => {
         </p>
 
         <Button variant="default">
-          <a href="#" download={`Angeles_CV${new Date().getFullYear()}`}>Download CV</a>
+          <a
+            href="/public/Angeles_CV_121924.pdf"
+            download="Angeles_CV_121924.pdf"
+          >
+            Download CV
+          </a>
         </Button>
       </div>
 
