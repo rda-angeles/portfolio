@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import HackerRankCertificate from "@/public/images/certifications/hackerrank-fe-react.png";
+import HackerRankCertificate from "/public/images/certifications/hackerrank-fe-react.png";
 import Image from "next/image";
 
 const Bio = () => {
