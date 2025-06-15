@@ -10,7 +10,7 @@ const Typewriter = dynamic(() => import("typewriter-effect"), { ssr: false });
 const Landing = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "/Angeles_CV061525.pdf";
+    link.href = "/Angeles_CV.pdf";
     link.download = "Angeles_CV.pdf";
     document.body.appendChild(link);
     link.click();
