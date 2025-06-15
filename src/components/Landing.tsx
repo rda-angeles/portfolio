@@ -8,8 +8,17 @@ import { Button } from "./ui/button";
 const Typewriter = dynamic(() => import("typewriter-effect"), { ssr: false });
 
 const Landing = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/Angeles_CV061525.pdf";
+    link.download = "Angeles_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <section className="flex flex-col flex-col-reverse items-center justify-center gap-x-5 lg:flex-row">
+    <section className="flex flex-col-reverse items-center justify-center gap-x-5 lg:flex-row">
       <div className="w-full mt-10 lg:mt-0">
         <h1 className="text-5xl sm:text-7xl">Hi, I&apos;m Nik!</h1>
         <p className="lg:text-lg">
@@ -26,13 +35,8 @@ const Landing = () => {
           </span>
         </p>
 
-        <Button variant="default">
-          <a
-            href="/public/Angeles_CV_121924.pdf"
-            download="Angeles_CV_121924.pdf"
-          >
-            Download CV
-          </a>
+        <Button variant="default" onClick={handleDownload}>
+          Download CV
         </Button>
       </div>
 

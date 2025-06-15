@@ -6,9 +6,27 @@ import SgLifeThree from "/public/images/life/sg-life-3.jpeg";
 import MyLifeOne from "/public/images/life/my-life-1.jpg";
 import MyLifeTwo from "/public/images/life/my-life-2.jpg";
 import MyLifeThree from "/public/images/life/my-life-3.jpg";
+import MyLifeFour from "/public/images/life/myLife4.jpeg";
+import MyLifeFive from "/public/images/life/myLife5.jpeg";
+import MyLifeSix from "/public/images/life/myLife6.jpeg";
 
 const Life = () => {
   const cards = [
+    {
+      id: 7,
+      className: "col-span-1",
+      thumbnail: MyLifeFour.src,
+    },
+    {
+      id: 9,
+      className: "md:col-span-1",
+      thumbnail: MyLifeSix.src,
+    },
+    {
+      id: 8,
+      className: "col-span-1",
+      thumbnail: MyLifeFive.src,
+    },
     {
       id: 1,
       className: "md:col-span-2",

@@ -57,7 +57,7 @@ export const HoverEffect = ({
             <CardTitle>{item.projName}</CardTitle>
             <div className="flex items-center justify-start flex-wrap gap-3 mt-2">
               {item.techStack.map((stack) => (
-                <Badge key={stack} className="w-[80px]">
+                <Badge key={stack} className="max-w-sm">
                   {stack}
                 </Badge>
               ))}
@@ -113,7 +113,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-card-foreground/70 tracking-wide leading-relaxed text-sm",
+        "text-card-foreground/70 tracking-wide leading-relaxed text-sm",
         className
       )}
     >

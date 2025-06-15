@@ -36,9 +36,7 @@ const ImageComponent = ({ card }: { card: Card }) => {
       src={card.thumbnail}
       height="500"
       width="500"
-      className={cn(
-        "object-cover absolute inset-0 h-full w-full"
-      )}
+      className={cn("object-cover absolute inset-0 h-full w-full")}
       alt="thumbnail"
       priority
     />
