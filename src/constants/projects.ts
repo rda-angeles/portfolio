@@ -5,8 +5,17 @@ import MovieZone from "/public/images/projects/moviezone.png";
 import HMIWebsite from "/public/images/projects/hmi-website.png";
 import HMIPortal from "/public/images/projects/hmi-portal.png";
 import SoleMates from "/public/images/projects/solemates.png";
+import NikArchives from "/public/images/projects/nik-archives.png";
 
 export const projects = [
+  {
+    projName: "Nik Archives",
+    site: "https://nik-archives.dev/",
+    github: "https://github.com/rda-angeles/nik-archives",
+    desc: "A personal blog where I share thoughts, stories, and discoveries from everyday life—covering everything from creativity and learning to the little moments that matter.",
+    img: NikArchives,
+    techStack: ["Next Js", "Sanity.io", "Tailwind", "TypeScript", "ShadCn UI"],
+  },
   {
     projName: "SoleMates",
     site: "https://solematesv1.vercel.app/",

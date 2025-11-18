@@ -1,6 +1,4 @@
 import NextJs from "/public/images/stacks/nextjs.svg";
-import NodeJs from "/public/images/stacks/nodejs.svg";
-import VueJs from "/public/images/stacks/vuejs.svg";
 import TypeScript from "/public/images/stacks/typescript.svg";
 import Scss from "/public/images/stacks/scss.svg";
 import Storybook from "/public/images/stacks/storybook.svg";
@@ -12,14 +10,6 @@ type TechStackType = {
 };
 
 export const techStacks: TechStackType[] = [
-  {
-    stack: "Vue Js",
-    icon: VueJs,
-  },
-  {
-    stack: "Node Js",
-    icon: NodeJs,
-  },
   {
     stack: "Next Js",
     icon: NextJs,

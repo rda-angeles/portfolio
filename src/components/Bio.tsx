@@ -13,7 +13,7 @@ const Bio = () => {
       <div>
         <p>
           I am a graduate of Computer Science with{" "}
-          {new Date().getFullYear() - 2020} years of experience working as a
+          {new Date().getFullYear() - 2019} years of experience working as a
           Front-End Developer in the industry where I have gained and enhanced
           my skills in developing user interfaces, testing, debugging, and
           optimizing web functionalities.

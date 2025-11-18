@@ -1,5 +1,3 @@
-import React from "react";
-
 import { techStacks } from "@/constants/technologyStacks";
 const TechStacks = () => {
   return (
